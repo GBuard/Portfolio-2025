@@ -684,6 +684,45 @@ export const ProjectsSection = () => {
                                         )}
                                     </ul>
                                 </section>
+                                {selectedProject.detailedDescription
+                                    .competencesValidees && (
+                                    <section>
+                                        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
+                                            Compétences Validées
+                                        </h3>
+                                        <div className="space-y-4">
+                                            {Object.entries(
+                                                selectedProject
+                                                    .detailedDescription
+                                                    .competencesValidees
+                                            ).map(
+                                                ([category, skills], index) => (
+                                                    <div key={index}>
+                                                        <h4 className="text-lg font-semibold text-white/80 mb-2">
+                                                            {category}
+                                                        </h4>
+                                                        <ul className="list-disc list-inside text-white/60 space-y-1">
+                                                            {skills.map(
+                                                                (
+                                                                    skill,
+                                                                    skillIndex
+                                                                ) => (
+                                                                    <li
+                                                                        key={
+                                                                            skillIndex
+                                                                        }
+                                                                    >
+                                                                        {skill}
+                                                                    </li>
+                                                                )
+                                                            )}
+                                                        </ul>
+                                                    </div>
+                                                )
+                                            )}
+                                        </div>
+                                    </section>
+                                )}
                             </div>
                         </div>
                     </Card>
