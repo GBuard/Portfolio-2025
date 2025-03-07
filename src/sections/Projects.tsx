@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+
+import nuit from "@/assets/images/mockupndli.png";
+
 import greenweb from "@/assets/images/greenweb.png";
 import greenweb2 from "@/assets/images/GreenWeb 2.png";
 
@@ -35,41 +38,102 @@ const portfolioProjects = [
         year: "2025",
         title: "Premier prix du Hackathon",
         results: [
-            { title: "Enhanced user experience by 40%" },
-            { title: "Improved site speed by 50%" },
-            { title: "Increased mobile traffic by 35%" },
+            { title: "Créer un site en une nuit" },
+            { title: "Thème : organisation d'évenements e-sportifs" },
         ],
-        link: "https://mmilan-toulon.alexandrecadel.fr/",
-        image: MMILAN,
-    },
-    {
-        company: "Innovative Co",
-        year: "2021",
-        title: "Light Saas Landing Page",
-        results: [
-            { title: "Boosted sales by 20%" },
-            { title: "Expanded customer reach by 35%" },
-            { title: "Increased brand awareness by 15%" },
-        ],
-        link: "https://youtu.be/7hi5zwO75yc",
-        image: lightSaasLandingPage,
-    },
-    {
-        company: "Quantum Dynamics",
-        year: "2023",
-        title: "AI Startup Landing Page",
-        results: [
-            { title: "Enhanced user experience by 40%" },
-            { title: "Improved site speed by 50%" },
-            { title: "Increased mobile traffic by 35%" },
-        ],
-        link: "https://youtu.be/Z7I5uSRHMHg",
-        image: aiStartupLandingPage,
+        link: "https://ndl-isen-2025.alexandrecadel.fr/",
+        image: nuit,
     },
 ];
 
 // Academic Projects
 const academicProjects = [
+    {
+        company: "Projet de Recherche",
+        year: "2023",
+        title: "Mediterraweb - SAE 201-202",
+        results: [
+            { title: "Conception d'une interface utilisateur intuitive" },
+            { title: "Intégration de visualisations de données dynamiques" },
+            { title: "Optimisation des performances de l'application" },
+        ],
+        link: "https://example.com/academic-project-2",
+        image: mediterraweb,
+        media: {
+            type: "video",
+            url: "https://www.youtube.com/embed/lsVHfcFbhhM",
+            screenshots: [mediterraweb],
+        },
+        pdfs: [
+            {
+                name: "Cahier de conception",
+                url: "/documents/cahier_conception_SAE_201-202.pdf",
+            },
+            {
+                name: "Cahier des charges fonctionnel",
+                url: "/documents/SAE_201_202_CDCF_CANOINE-BUARD-LHUILLIER-MARIA-CADEL-PITRUZELLA-GUILLET (1).pdf",
+            },
+        ],
+        detailedDescription: {
+            context:
+                "Création d'une agence de développement web proposant des services de conception de sites, de templates et de plugins.",
+            objectives: [
+                "Établir une identité visuelle et une présence en ligne pour l'agence",
+                "Développer un site vitrine fonctionnel et attractif",
+                "Produire des supports de communication pour promouvoir l'agence",
+            ],
+            methodologie: [
+                "Définition de la charte graphique et création du logo",
+                "Développement du site web avec une approche responsive",
+                "Production d'un teaser et d'une campagne publicitaire",
+            ],
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "WordPress",
+                "Adobe Suite",
+            ],
+            resultats: [
+                "Identité visuelle complète (nom, logo, charte graphique)",
+                "Site web vitrine opérationnel et responsive",
+                "Teaser de lancement et campagne de publicité",
+            ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "AC11.01 - Présenter une organisation, ses activités et son environnement",
+                    "AC11.04 - Analyser des formes médiatiques et leur sémiotique",
+                    "AC11.05 - Identifier les cibles",
+                ],
+                CONCEVOIR: [
+                    "AC12.01 - Concevoir un produit ou un service en termes d’usage et de fonctionnalité",
+                    "AC12.04 - Proposer une stratégie de communication",
+                ],
+                EXPRIMER: [
+                    "AC13.01 - Écrire pour les médias numériques",
+                    "AC13.02 - Produire des pistes graphiques et des planches d’inspiration",
+                    "AC13.03 - Créer, composer et retoucher des visuels",
+                    "AC13.04 - Tourner et monter une vidéo",
+                    "AC13.05 - Designer une interface web (wireframes, UI)",
+                    "AC13.06 - Optimiser les médias en fonction de leurs usages et supports de diffusion",
+                ],
+                DEVELOPPER: [
+                    "AC14.01 - Exploiter de manière autonome un environnement de développement efficace",
+                    "AC14.02 - Produire des pages Web fluides incluant un balisage sémantique efficace et des interactions simples",
+                    "AC14.03 - Générer des pages Web à partir de données structurées",
+                    "AC14.04 - Mettre en ligne une application Web en utilisant une solution d’hébergement standard",
+                    "AC14.06 - Déployer et personnaliser une application Web en utilisant un CMS ou un framework MVC",
+                ],
+                ENTREPRENDRE: [
+                    "AC15.01 - Gérer un projet avec une méthode classique",
+                    "AC15.02 - Budgéter un projet et suivre sa rentabilité",
+                    "AC15.05 - Construire une présence en ligne professionnelle",
+                    "AC15.06 - Interagir au sein des organisations",
+                    "AC15.07 - Produire un message écrit ou oral professionnel",
+                ],
+            },
+        },
+    },
     {
         company: "Université de Toulon",
         year: "1ère année",
@@ -184,92 +248,7 @@ const academicProjects = [
             ],
         },
     },
-    {
-        company: "Projet de Recherche",
-        year: "2023",
-        title: "Mediterraweb - SAE 201-202",
-        results: [
-            { title: "Conception d'une interface utilisateur intuitive" },
-            { title: "Intégration de visualisations de données dynamiques" },
-            { title: "Optimisation des performances de l'application" },
-        ],
-        link: "https://example.com/academic-project-2",
-        image: mediterraweb,
-        media: {
-            type: "video",
-            url: "https://www.youtube.com/embed/lsVHfcFbhhM",
-            screenshots: [mediterraweb],
-        },
-        pdfs: [
-            {
-                name: "Cahier de conception",
-                url: "/documents/cahier_conception_SAE_201-202.pdf",
-            },
-            {
-                name: "Cahier des charges fonctionnel",
-                url: "/documents/SAE_201_202_CDCF_CANOINE-BUARD-LHUILLIER-MARIA-CADEL-PITRUZELLA-GUILLET (1).pdf",
-            },
-        ],
-        detailedDescription: {
-            context:
-                "Création d'une agence de développement web proposant des services de conception de sites, de templates et de plugins.",
-            objectives: [
-                "Établir une identité visuelle et une présence en ligne pour l'agence",
-                "Développer un site vitrine fonctionnel et attractif",
-                "Produire des supports de communication pour promouvoir l'agence",
-            ],
-            methodologie: [
-                "Définition de la charte graphique et création du logo",
-                "Développement du site web avec une approche responsive",
-                "Production d'un teaser et d'une campagne publicitaire",
-            ],
-            technologies: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "WordPress",
-                "Adobe Suite",
-            ],
-            resultats: [
-                "Identité visuelle complète (nom, logo, charte graphique)",
-                "Site web vitrine opérationnel et responsive",
-                "Teaser de lancement et campagne de publicité",
-            ],
-            competencesValidees: {
-                COMPRENDRE: [
-                    "AC11.01 - Présenter une organisation, ses activités et son environnement",
-                    "AC11.04 - Analyser des formes médiatiques et leur sémiotique",
-                    "AC11.05 - Identifier les cibles",
-                ],
-                CONCEVOIR: [
-                    "AC12.01 - Concevoir un produit ou un service en termes d’usage et de fonctionnalité",
-                    "AC12.04 - Proposer une stratégie de communication",
-                ],
-                EXPRIMER: [
-                    "AC13.01 - Écrire pour les médias numériques",
-                    "AC13.02 - Produire des pistes graphiques et des planches d’inspiration",
-                    "AC13.03 - Créer, composer et retoucher des visuels",
-                    "AC13.04 - Tourner et monter une vidéo",
-                    "AC13.05 - Designer une interface web (wireframes, UI)",
-                    "AC13.06 - Optimiser les médias en fonction de leurs usages et supports de diffusion",
-                ],
-                DEVELOPPER: [
-                    "AC14.01 - Exploiter de manière autonome un environnement de développement efficace",
-                    "AC14.02 - Produire des pages Web fluides incluant un balisage sémantique efficace et des interactions simples",
-                    "AC14.03 - Générer des pages Web à partir de données structurées",
-                    "AC14.04 - Mettre en ligne une application Web en utilisant une solution d’hébergement standard",
-                    "AC14.06 - Déployer et personnaliser une application Web en utilisant un CMS ou un framework MVC",
-                ],
-                ENTREPRENDRE: [
-                    "AC15.01 - Gérer un projet avec une méthode classique",
-                    "AC15.02 - Budgéter un projet et suivre sa rentabilité",
-                    "AC15.05 - Construire une présence en ligne professionnelle",
-                    "AC15.06 - Interagir au sein des organisations",
-                    "AC15.07 - Produire un message écrit ou oral professionnel",
-                ],
-            },
-        },
-    },
+
     {
         company: "Université de Toulon",
         year: "2023",
