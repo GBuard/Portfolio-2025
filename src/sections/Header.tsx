@@ -6,10 +6,18 @@ export const Header = () => {
                     Home
                 </a>
                 <a href="#projects" className="nav-item">
-                    Projects
+                    Projets
                 </a>
                 <a href="#about" className="nav-item">
-                    About
+                    À propos
+                </a>
+                <a
+                    href="/documents/CV_Guénolé_BUARD_.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="nav-item"
+                >
+                    CV
                 </a>
                 <a
                     href="#contact"
