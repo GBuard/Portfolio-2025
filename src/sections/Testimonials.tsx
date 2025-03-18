@@ -1,8 +1,9 @@
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import Laurence from "@/assets/images/Laurence SANIAL.png";
+import Fred from "@/assets/images/Fred.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
@@ -11,16 +12,16 @@ import { Fragment } from "react";
 
 const testimonials = [
     {
-        name: "Alex Turner",
-        position: "Marketing Manager @ TechStartups",
-        text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-        avatar: memojiAvatar1,
+        name: "Frederique MOREL",
+        position: "Assistante de direction @ Ariane Méditerranée",
+        text: "Top Guénolé, merci beaucoup, comme à ton habitude, lorsqu’on échange avec toi sur un sujet tu vas au fond des choses, c’est très appréciable de voir à quel point tu t’investis merci 😊",
+        avatar: Fred,
     },
     {
-        name: "Olivia Green",
-        position: "Head of Design @ GreenLeaf",
-        text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-        avatar: memojiAvatar2,
+        name: "Laurence SANIAL",
+        position: "Directrice d'Ariane Méditerranée",
+        text: "Tout d’abord Guénolé je voulais te remercier car tu as fait un excellent travail sur notre site Internet et tu as géré en autonomie les choix graphiques qui nous correspondent parfaitement et cela signifie à quel point tu as compris qui on était et combien tu t’es approprié notre secteur. Je te félicite vraiment je suis très contente du résultat pourtant je suis pénible !! Bravo",
+        avatar: Laurence,
     },
     {
         name: "Daniel White",
