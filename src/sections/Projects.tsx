@@ -25,6 +25,7 @@ import accueil from "@/assets/images/accueil.png";
 import offres from "@/assets/images/offre.png";
 import cal from "@/assets/images/cal.png";
 import apl from "@/assets/images/apl.png";
+import noyau from "@/assets/images/NoyauConnexion.png";
 
 import MMILAN from "@/assets/images/MMILAN.png";
 import ecomove from "@/assets/images/ecomove.png";
@@ -597,26 +598,36 @@ const academicProjects = [
         image: MMILAN,
         detailedDescription: {
             context:
-                "Projet de recherche visant à analyser l'impact environnemental des changements climatiques dans la région PACA.",
+                "Événement e-sport organisé par le département MMI Toulon (promo entière, pôles dédiés). Enjeux : centraliser l’info (site), fiabiliser les matchs (serveurs dédiés), fluidifier l’exploitation jour J (accueil, arbitrage, régie). Contraintes fortes de réseau/électricité, délais courts, et adoption par +90 étudiants.",
             objectives: [
-                "Modéliser les tendances climatiques à long terme",
-                "Identifier les zones les plus vulnérables",
-                "Proposer des stratégies d'adaptation",
-                "Analyser les impacts à long terme",
-                "Développer des modèles prédictifs complexes",
-                "Comprendre les dynamiques environnementales régionales",
+                "Mettre en ligne un hub d’inscriptions et d’informations clair, fournir un classement live lisible pour les joueurs/spectateurs, et assurer la stabilité des serveurs de jeu (Counter-Strike 2) malgré la faible maturité de l’écosystème à la date de l’événement.",
             ],
             methodologie: [
-                "Collecte de données satellitaires",
-                "Analyse statistique avancée",
-                "Utilisation de modèles de machine learning",
+                "Côté web, j’ai intégré l’équipe dev : pages “planning” et “connexion”, corrections de bugs, hébergement, nom de domaine, configuration emails automatiques, et déploiement continu via GitHub (pull requests + hooks). J’ai aussi développé la page “classement des pools” avec rendu conditionnel selon la place (or/argent/bronze + effets). Côté infra, j’ai créé et configuré les serveurs CS2 (jeton Steam, modes, maps, slots), écrit un script d’automatisation Windows pour le lancement, et mené des tests en réseau local virtualisé afin de m’aligner sur les conditions réelles. Le jour J : installation des postes, anti-triche, hosting des parties, et support régie.",
             ],
-            technologies: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
+            technologies: [
+                "PHP, MySQL, Git/GitHub (PR, hooks), hébergement web + DNS & emails, Counter-Strike 2 Dedicated Server, scripts Windows, OBS/plateformes live (support régie).",
+            ],
             resultats: [
-                "Création d'un modèle prédictif avec 85% de précision",
-                "Publication dans une revue scientifique internationale",
-                "Présentation lors d'une conférence académique",
+                "Le site a servi de point d’entrée fiable (planning, connexions, infos joueurs) et la page de classement dynamique a rendu la compétition lisible en temps réel. Les serveurs CS2 ont tenu la charge pendant l’événement, malgré des commandes encore instables à cette période. L’exploitation terrain (accueil, arbitrage, régie) s’est déroulée sans incident majeur sur mon périmètre.",
             ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "contraintes techniques (LAN, débit, droits), tests en environnement simulé, adaptation rapide.",
+                ],
+                CONCEVOIR: [
+                    "architecture des pages clés, logique de classement, scénarisation des flux joueurs.",
+                ],
+                EXPRIMER: [
+                    "interfaces claires pour un contexte live, messages techniques aux équipes, présence micro (cast/annonces ponctuelles).",
+                ],
+                DEVELOPPER: [
+                    "intégration front dynamique (JS/CSS conditionnel), back PHP/MySQL, déploiement et automatisation.",
+                ],
+                ENTREPRENDRE: [
+                    "préparation opérationnelle, gestion des risques réseau/serveurs, coordination avec régie/arbitrage.",
+                ],
+            },
         },
     },
     {
@@ -661,7 +672,7 @@ const academicProjects = [
         },
     },
     {
-        company: "Projet de Recherche",
+        company: "Université de Toulon",
         year: "2023",
         title: "ECOMOVE",
         results: [
@@ -690,6 +701,57 @@ const academicProjects = [
                 "Temps de chargement réduit de 40%",
                 "Retours positifs de la communauté académique",
             ],
+        },
+    },
+    {
+        company: "Université de Toulon",
+        year: "2025",
+        title: "VisioConf",
+        results: [
+            { title: "Temps réel (Socket.io)" },
+            { title: "Next.js + Express + Mongo" },
+            { title: "Reprise & refactor d’un legacy" },
+        ],
+        link: "",
+        image: noyau,
+        detailedDescription: {
+            context:
+                "Reprise et ré-appropriation d’un projet legacy de 3ᵉ année pour en faire une base stable et démontrable : messagerie/visioconf inspirée de Discord/Teams, avec équipes, salons textuels & vocaux et partage de fichiers. Enjeu : comprendre un code existant, le refactorer, sécuriser l’authentification et livrer une démo fluide en temps réel.",
+            objectives: [
+                "Stabiliser la communication temps réel (chat, présence, notifications), structurer les modèles de données (équipes, salons, messages, pièces jointes), sécuriser l’accès (rôles/droits, JWT), mettre en place un environnement conteneurisé pour développer/tester, et fournir une documentation claire (archi, installation, usage).",
+            ],
+            methodologie: [
+                "Audit du code hérité puis refactor par couches (front, API, sockets). Conception d’un schéma d’architecture et d’une modélisation MongoDB unifiée. Mise en place du flux PR/merge GitHub, d’un docker-compose (MongoDB + API Express + front Next.js) et d’un reverse proxy. Côté front : composants Next.js + TypeScript, gestion d’état, vues équipes/salons. Côté back : controllers Express, rooms Socket.io, logique d’autorisations, upload de fichiers. Sessions de tests latence/fiabilité et démos itératives.",
+            ],
+            technologies: [
+                "Next.js",
+                "Express.js",
+                "Socket.io",
+                "MongoDB + Mongoose",
+                "JWT",
+                "Docker",
+                "GitHub",
+            ],
+            resultats: [
+                "Messagerie temps réel (chat, présence, notifications), création/gestion d’équipes et de salons, partage de fichiers, base de code documentée et conteneurisée (setup en quelques commandes). Performances stables en démo, avec une architecture prête pour des features ultérieures (visio/audio étendue, recherche, modération).",
+            ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "Audit d’un legacy, mesure rapide latence/charge, veille technique.",
+                ],
+                CONCEVOIR: [
+                    "Architecture modulaire, règles d’accès et de permissions, schémas d’archi.",
+                ],
+                EXPRIMER: [
+                    "Docs techniques (installation/archi/usage) et démos claires.",
+                ],
+                DEVELOPPER: [
+                    "Framework client & serveur, sockets en temps réel, modélisation de données, packaging Docker.",
+                ],
+                ENTREPRENDRE: [
+                    "Pilotage itératif (PR/merge), coordination et priorisation, défense des choix techniques.",
+                ],
+            },
         },
     },
 ] as const;
