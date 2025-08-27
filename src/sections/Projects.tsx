@@ -17,13 +17,15 @@ import planty1 from "@/assets/images/maquette.png";
 import planty2 from "@/assets/images/wordpress.jpg";
 
 import mediterraweb from "@/assets/images/mediterraweb.png";
+import boutique from "@/assets/images/boutique.png";
+import ads from "@/assets/images/ads.png";
+import articles from "@/assets/images/articles.png";
+import post1 from "@/assets/images/Post.png";
+import accueil from "@/assets/images/accueil.png";
 
 import MMILAN from "@/assets/images/MMILAN.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import ecomove from "@/assets/images/ecomove.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 
-import gamedev from "@/assets/images/gamedev.png";
 import blender from "@/assets/images/blender.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -38,11 +40,258 @@ const portfolioProjects = [
         year: "2025",
         title: "Premier prix du Hackathon",
         results: [
-            { title: "Créer un site en une nuit" },
-            { title: "Thème : organisation d'évenements e-sportifs" },
+            { title: "Site fonctionnel livré en 12 h" },
+            { title: "Thème : organisation d’événements e-sportifs" },
+            { title: "1er prix — jury ISEN 2025" },
         ],
         link: "https://ndl-isen-2025.alexandrecadel.fr/",
         image: nuit,
+        detailedDescription: {
+            context:
+                "Hackathon nocturne de l’ISEN : réaliser, en 12 heures, un site événementiel autour de l’organisation d’évènements e-sportifs (tournois, inscriptions, planning). Contraintes fortes : temps ultra-court, démo live devant jury, livrable public et responsive.",
+            objectives: [
+                "Sortir un MVP opérationnel : présentation de l’événement, inscriptions d’équipes, planning et classement, compte à rebours.",
+                "Offrir une UX très simple (mobile-first) pour limiter la friction le soir même.",
+                "Déployer le site avant la soutenance et assurer une démo fluide.",
+            ],
+            methodologie: [
+                "Cadrage express (scope strict, user flow minimal), prototypage rapide (sections clés), puis développement itératif en petites tâches (to-do → doing → done). Tests fréquents en conditions réelles (mobile/wifi), mise en prod progressive et correctifs à chaud avant la démo. Focus sur des composants réutilisables (cartes équipe, blocs planning, pastilles d’état) et sur la lisibilité des infos (hiérarchie typographique, contrastes, CTA clairs).",
+            ],
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "GitHub",
+                "Vercel",
+                "Figma",
+                "Shadcn/UI",
+            ],
+            resultats: [
+                "Site livré en 12 h, déployé et démontré en live sans incident.",
+                "1er prix du jury ISEN 2025.",
+                "Parcours clair (inscription → planning → suivi des scores), responsive et compréhensible en quelques secondes.",
+                "Base réutilisable pour d’autres évènements de type LAN/meet-up.",
+            ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "respect des bonnes pratiques web (lisibilité, accessibilité de base, performance “suffisante” pour la démo)",
+                ],
+                CONCEVOIR: [
+                    "cadrage fonctionnel, hiérarchie d’information, design mobile-first.",
+                ],
+                EXPRIMER: ["micro-copies efficaces, pitch de démo clair."],
+                DEVELOPPER: [
+                    "intégration front responsive, interactions simples, mise en ligne en autonomie.",
+                ],
+                ENTREPRENDRE: [
+                    "gestion du temps, priorisation, démo convaincante (pression temps réel).",
+                ],
+            },
+        },
+    },
+    {
+        company: "Relance e-commerce (OMS)",
+        year: "2024",
+        title: "TPEPASCHER.com",
+        results: [
+            { title: "Relance e-commerce sous Wix" },
+            { title: "Google PageSpeed Insights 97 + SEO/SEA" },
+            { title: "37 commandes en 7 mois" },
+        ],
+        link: "https://www.tpepascher.com/",
+        image: boutique,
+        media: {
+            screenshots: [ads, articles],
+        },
+        detailedDescription: {
+            context:
+                "Relance d’une sous-marque e-commerce arrêtée en 2018. Mission : créer un site marchand performant et maintenable par une petite équipe non technique.",
+            objectives: [
+                "Site e-commerce complet et responsive (catalogue, commandes, back-office).",
+                "Score PageSpeed > 90 + bases SEO solides.",
+                "Acquisition mixte : blog SEO (11 articles) + SEA Google Ads.",
+                "Transmission : formation et documentation.",
+            ],
+            methodologie: [
+                "Benchmark UX/SEO/positionnement.",
+                "Prototypage Figma puis production visuelle (shooting + scripts Photoshop).",
+                "Intégration et configuration sous Wix (gabarits, fiches structurées, taxonomie).",
+                "Optimisations perfs/SEO (compression, structure, Screaming Frog & PageSpeed).",
+                "Mise en place Analytics/Search Console & campagnes Ads.",
+                "Allers-retours avec le gérant, formation back-office.",
+            ],
+            technologies: [
+                "Wix (CMS)",
+                "Figma",
+                "Adobe Photoshop",
+                "Screaming Frog SEO Spider",
+                "Google PageSpeed Insights",
+                "Google Analytics / Search Console",
+                "Google Ads",
+                "Gestion Domaine/DNS/HTTPS",
+            ],
+            resultats: [
+                "Score PageSpeed porté de 59 à 97.",
+                "37 commandes en 7 mois.",
+                "4 570 clics et 600 000+ impressions via Ads.",
+                "Back-office opérationnel et repris par l’équipe.",
+            ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "AC21.01 – Analyse de stratégie/positionnement",
+                    "AC21.02 – Audit trafic & indexation",
+                    "AC21.05 – Cartographie de l’expérience (Analytics)",
+                ],
+                CONCEVOIR: [
+                    "Architecture d’information, gabarits produits, parcours d’achat",
+                ],
+                EXPRIMER: [
+                    "Ligne éditoriale claire, rédaction d’articles, publications RS",
+                ],
+                DEVELOPPER: [
+                    "AC14.01/02/03/04/06 – Environnement outillé, intégration responsive, données structurées, mise en ligne, personnalisation CMS",
+                    "AC24.01/03/05 – Responsive, interactions, optimisation perfs/SEO",
+                ],
+                ENTREPRENDRE: [
+                    "AC15.01 – Pilotage classique du projet",
+                    "AC15.02 – Budget SEA et suivi",
+                    "AC25.01 – Amélioration continue (itérations)",
+                    "AC25.05 – Codes pro (docs, passation)",
+                    "AC15.07 – Messages pro (formation, supports)",
+                ],
+            },
+        },
+    },
+    {
+        company: "Itinéraire Café / OMS",
+        year: "2022–2023",
+        title: "i-menus — Menu tablette & borne",
+        results: [
+            { title: "Menu tablette clé-en-main" },
+            { title: "50+ visuels batchés (Photoshop)" },
+            { title: "Thème clair/sombre + borne" },
+        ],
+        link: "https://www.i-menus.com/",
+        image: post1,
+        detailedDescription: {
+            context:
+                "Mission confiée par Optima Monétique Systèmes pour déployer la solution i-menus chez Itinéraire Café en amont de la saison estivale. Enjeux : personnaliser l’application de menu tablette à l’identité du client, produire et intégrer 50+ visuels produits, et proposer une variante borne consultative pour capter les passants — le tout en moins d’un mois.",
+            objectives: [
+                "Menu tablette fidèle à la charte du client",
+                "Deux directions UI (clair/sombre) au choix",
+                "Production visuelle industrialisée et légère",
+                "Adaptation borne : déclinaisons visuelles grand format pour l’attraction vitrine.",
+                "Intégration back-office i-menus + déclinaison borne",
+            ],
+            methodologie: [
+                "Brief & mini-benchmark, maquettes Figma, itérations",
+                "Actions Photoshop + traitement par lots pour 50+ visuels",
+                "Compression Optimizilla et tests sur tablette",
+                "Intégration back-office (accueil, catégories, familles, fiches)",
+                "Adaptation borne (grands visuels cohérents)",
+            ],
+            technologies: [
+                "Figma",
+                "Adobe Photoshop (actions & batch)",
+                "Optimizilla",
+                "Back-office i-menus",
+                "site i-menus",
+            ],
+            resultats: [
+                "Livraison dans les délais avant saison",
+                "Bibliothèque de visuels homogènes et optimisés",
+                "Borne consultative alignée avec le menu tablette",
+                "Autonomie client via le back-office",
+            ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "AC11.02 – Évaluer un dispositif existant",
+                    "AC11.05 – Identifier les cibles et usages",
+                ],
+                CONCEVOIR: [
+                    "AC12.01 – Concevoir en termes d’usage et de fonctionnalité",
+                ],
+                EXPRIMER: [
+                    "AC13.02 – Pistes graphiques",
+                    "AC13.03 – Création/retouche visuels",
+                    "AC13.05 – UI design (wireframes, écrans)",
+                    "AC13.06 – Optimisation médias",
+                ],
+                DEVELOPPER: [
+                    "AC14.01/14.02/14.06 – Environnement outillé, intégration, personnalisation CMS",
+                    "AC24.01 – Responsive",
+                ],
+                ENTREPRENDRE: [
+                    "AC15.01 – Gestion de projet (délais serrés)",
+                    "AC15.07 – Restitution et dialogue client",
+                ],
+            },
+        },
+    },
+    {
+        company: "Ariane Méditerranée",
+        year: "2025",
+        title: "App Glide — Offres & Positionnements",
+        results: [
+            { title: "App interne Glide" },
+            { title: "Offres & positionnements centralisés" },
+            { title: "Stats & notifications auto" },
+        ],
+        link: "https://ariane-mediterranee.fr",
+        image: accueil,
+        media: {
+            screenshots: [mediterraweb],
+        },
+        detailedDescription: {
+            context:
+                "Centralisation des offres, positionnements, événements et ressources dans une app interne Glide (zéro budget, utilisateurs non techniques).",
+            objectives: [
+                "Unifier offres/candidats/événements/stats",
+                "Fiabiliser l’historique et gagner du temps",
+                "Produire des indicateurs utiles (insertions, archivage)",
+            ],
+            methodologie: [
+                "Itérations courtes, canal Slack pour feedbacks",
+                "Modélisation des données (Sheets) et vues Glide",
+                "Automatisations Make/Zapier (mails, archivage J+90)",
+                "Documentation + micro-formations 1:1",
+            ],
+            technologies: [
+                "Glide",
+                "Google Sheets & Drive",
+                "Make",
+                "Slack",
+                "Zapier",
+            ],
+            resultats: [
+                "Usage quotidien par les équipes (CIP, CRE, référents)",
+                "Statuts d’offres + archivage auto pour statistiques",
+                "Historique par bénéficiaire, traçabilité renforcée",
+                "Adoption rapide grâce à la doc et l’accompagnement",
+            ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "AC11.02 – Évaluer un dispositif existant",
+                    "AC11.05 – Identifier les cibles/usages internes",
+                ],
+                CONCEVOIR: [
+                    "AC12.01 – Concevoir en termes d’usage",
+                    "AC22.01 – Co-concevoir le produit avec retours terrain",
+                ],
+                EXPRIMER: [
+                    "AC13.01 – Rédiger doc et messages d’accompagnement",
+                ],
+                DEVELOPPER: [
+                    "AC14.01/14.06 – Environnement outillé & personnalisation CMS",
+                    "AC24.01/24.03 – Vues responsives & interactions",
+                ],
+                ENTREPRENDRE: [
+                    "AC35.01 – Piloter un produit",
+                    "AC35.02 – Maîtriser la qualité d’usage",
+                    "AC35.04 – Défendre et expliquer les choix",
+                ],
+            },
+        },
     },
 ];
 
@@ -53,9 +302,9 @@ const academicProjects = [
         year: "2023",
         title: "Mediterraweb - SAE 201-202",
         results: [
-            { title: "Conception d'une interface utilisateur intuitive" },
-            { title: "Intégration de visualisations de données dynamiques" },
-            { title: "Optimisation des performances de l'application" },
+            { title: "Identité de marque & charte complètes" },
+            { title: "Site vitrine WordPress responsive orienté conversion" },
+            { title: "Teaser de lancement + event VR sponsorisé" },
         ],
         link: "https://example.com/academic-project-2",
         image: mediterraweb,
@@ -76,34 +325,44 @@ const academicProjects = [
         ],
         detailedDescription: {
             context:
-                "Création d'une agence de développement web proposant des services de conception de sites, de templates et de plugins.",
+                "Projet d’agence fictive mené en mode “équipe-agence” (commande SAEMMITLN). Exigences : identité originale, cohérence de marque, présence web, lancement événementiel (teaser + événement imposés), et communication multicanale mesurable, le tout sur un planning serré (S11→S22).",
             objectives: [
-                "Établir une identité visuelle et une présence en ligne pour l'agence",
-                "Développer un site vitrine fonctionnel et attractif",
-                "Produire des supports de communication pour promouvoir l'agence",
+                "Formaliser une identité de marque complète (nom, logo, charte) et un positionnement clair.",
+                "Mettre en ligne un site vitrine orienté conversion (contact, prise d’information).",
+                "Produire un teaser de lancement et opérer une campagne social media cohérente.",
+                "Organiser un événement VR fédérateur autour de l’agence.",
             ],
             methodologie: [
-                "Définition de la charte graphique et création du logo",
-                "Développement du site web avec une approche responsive",
-                "Production d'un teaser et d'une campagne publicitaire",
+                "Branding & UX-UI : benchmark, personas, naming, charte (couleurs/typos), maquettes Figma.",
+                "Site : intégration WordPress (Hello + Elementor), arborescence conversion-first, responsive, base SEO.",
+                "Teaser & event : note d’intention, storyboard, tournage, montage/motion; logistique d’un mini-event VR.",
+                "Communication : lignes éditoriales, calendriers de publications, suivi des performances (Meta/GA).",
+                "Gestion de projet : WBS, Gantt, jalons, budget/sponsors, registres de risques, dossiers de suivi.",
             ],
             technologies: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "WordPress",
-                "Adobe Suite",
+                "Figma",
+                "Illustrator/Photoshop",
+                "After Effects/Premiere Pro",
+                "WordPress (Hello + Elementor)",
+                "Hostinger",
+                "Meta Business Suite",
+                "Google Analytics",
+                "Event) Unity/Blender pour les assets VR",
+                "MS Project (WBS/Gantt)",
             ],
             resultats: [
-                "Identité visuelle complète (nom, logo, charte graphique)",
-                "Site web vitrine opérationnel et responsive",
-                "Teaser de lancement et campagne de publicité",
+                "Identité visuelle aboutie (logo, charte, déclinaisons web/print, favicon, kits réseaux).",
+                "Site vitrine opérationnel (pages agence/services/réalisations/blog/contact, CTA permanents, responsive).",
+                "Teaser finalisé et diffusé + campagne social media (posts, carrousels, Reels).",
+                "Événement VR organisé (~40 participants) avec sponsoring Gaumont Pathé et retours positifs.",
+                "Dossiers livrés : cahier des charges, cahier de conception, WBS/Gantt, guide d’utilisation/maintenance.",
             ],
             competencesValidees: {
                 COMPRENDRE: [
                     "AC11.01 - Présenter une organisation, ses activités et son environnement",
                     "AC11.04 - Analyser des formes médiatiques et leur sémiotique",
                     "AC11.05 - Identifier les cibles",
+                    "AC11.06 – Entretiens/personas et user stories pour cadrer cibles & usages.",
                 ],
                 CONCEVOIR: [
                     "AC12.01 - Concevoir un produit ou un service en termes d’usage et de fonctionnalité",
@@ -357,25 +616,22 @@ const academicProjects = [
             ],
         },
     },
-];
+] as const;
+
+type AcademicProject = (typeof academicProjects)[number];
+type PortfolioProject = (typeof portfolioProjects)[number];
+type AnyProject = AcademicProject | PortfolioProject;
 
 export const ProjectsSection = () => {
     const [isAcademicView, setIsAcademicView] = useState(false);
-    const [selectedProject, setSelectedProject] = useState<
-        (typeof academicProjects)[0] | null
-    >(null);
+    const [selectedProject, setSelectedProject] = useState<AnyProject | null>(
+        null
+    );
 
-    const toggleProjectView = () => {
-        setIsAcademicView(!isAcademicView);
-    };
-
-    const openProjectModal = (project: (typeof academicProjects)[0]) => {
+    const toggleProjectView = () => setIsAcademicView(!isAcademicView);
+    const openProjectModal = (project: AnyProject) =>
         setSelectedProject(project);
-    };
-
-    const closeProjectModal = () => {
-        setSelectedProject(null);
-    };
+    const closeProjectModal = () => setSelectedProject(null);
 
     const currentProjects = isAcademicView
         ? academicProjects
@@ -390,7 +646,8 @@ export const ProjectsSection = () => {
                         title="Portfolio professionnel"
                         description="Découvrez comment j'ai transformé des concepts en expériences numériques attractives."
                     />
-                    {/* Toggle Switch */}
+
+                    {/* Toggle */}
                     <div className="flex justify-center my-6">
                         <div className="flex items-center">
                             <span
@@ -423,140 +680,145 @@ export const ProjectsSection = () => {
                         </div>
                     </div>
 
+                    {/* Cartes projets */}
                     <div className="mt-10 md:mt-20 flex flex-col gap-20">
-                        {currentProjects.map((project, projectIndex) => (
-                            <Card
-                                key={project.title}
-                                className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
-                                style={{
-                                    top: `calc(64px + ${projectIndex * 40}px`,
-                                }}
-                            >
-                                <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-                                    <div className="lg:pb-16">
-                                        <div
-                                            className="bg-gradient-to-r from-emerald-300 to-sky-400 
-                                    inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text"
-                                        >
-                                            <span>{project.company}</span>
-                                            <span>&bull;</span>
-                                            <span>{project.year}</span>
-                                        </div>
+                        {currentProjects.map((project, projectIndex) => {
+                            const hasDetails =
+                                (project as any).detailedDescription ||
+                                (project as any).media ||
+                                (project as any).pdfs;
 
-                                        <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
-                                            {project.title}
-                                        </h3>
-                                        <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                                        <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                                            {project.results.map(
-                                                (result, index) => (
-                                                    <li
-                                                        key={index}
-                                                        className="flex gap-2 text-sm md:text-base text-white/50"
-                                                    >
-                                                        <CheckCircleIcon className="size-5 md:size-6" />
-                                                        <span>
-                                                            {result.title}
-                                                        </span>
-                                                    </li>
-                                                )
-                                            )}
-                                        </ul>
-                                        <div className="flex gap-4 mt-8">
-                                            <a
-                                                href={project.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl
-                                     font-semibold inline-flex items-center justify-center gap-2"
-                                            >
-                                                <span>Découvrir</span>
-                                                <ArrowUpRightIcon className="size-4" />
-                                            </a>
-                                            {isAcademicView && (
+                            return (
+                                <Card
+                                    key={project.title}
+                                    className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+                                    style={{
+                                        top: `calc(64px + ${
+                                            projectIndex * 40
+                                        }px`,
+                                    }}
+                                >
+                                    <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+                                        <div className="lg:pb-16">
+                                            <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                                                <span>{project.company}</span>
+                                                <span>&bull;</span>
+                                                <span>{project.year}</span>
+                                            </div>
+
+                                            <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
+                                                {project.title}
+                                            </h3>
+                                            <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                                            <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                                                {project.results.map(
+                                                    (result, index) => (
+                                                        <li
+                                                            key={index}
+                                                            className="flex gap-2 text-sm md:text-base text-white/50"
+                                                        >
+                                                            <CheckCircleIcon className="size-5 md:size-6" />
+                                                            <span>
+                                                                {result.title}
+                                                            </span>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+
+                                            <div className="flex gap-4 mt-8">
+                                                <a
+                                                    href={project.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2"
+                                                >
+                                                    <span>Découvrir</span>
+                                                    <ArrowUpRightIcon className="size-4" />
+                                                </a>
+
+                                                {/* NEW: bouton En savoir plus pour TOUTES les cartes (pro & académiques) si contenu détaillé
+                            — et fallback : on affiche quand même une modale résumé */}
                                                 <button
                                                     onClick={() =>
                                                         openProjectModal(
-                                                            project as (typeof academicProjects)[0]
+                                                            project as AnyProject
                                                         )
                                                     }
-                                                    className="bg-white/10 text-white h-12 w-full md:w-auto px-6 rounded-xl
-                                     font-semibold inline-flex items-center justify-center gap-2 hover:bg-white/20 transition-colors"
+                                                    className="bg-white/10 text-white h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 hover:bg-white/20 transition-colors"
                                                 >
                                                     <span>En savoir plus</span>
                                                 </button>
-                                            )}
+                                            </div>
+                                        </div>
+
+                                        <div className="relative">
+                                            <Image
+                                                src={project.image}
+                                                alt={project.title}
+                                                className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                                            />
                                         </div>
                                     </div>
-                                    <div className="relative">
-                                        <Image
-                                            src={project.image}
-                                            alt={project.title}
-                                            className="mt-8 -mb-4 md:-mb-0 
-                                            lg:mt-0 lg:absolute lg:h-full
-                                            lg:w-auto lg:max-w-none"
-                                        />
-                                    </div>
-                                </div>
-                            </Card>
-                        ))}
+                                </Card>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
 
-            {/* Modal pour les projets académiques */}
+            {/* Modale (pro & académiques) */}
             {selectedProject && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
-                    <Card
-                        className="w-full max-w-5xl md:w-4/5 lg:w-4/5 xl:w-4/5 
-                        max-h-[90vh] overflow-hidden relative 
-                        bg-gradient-to-br from-zinc-800/80 to-zinc-900/80 
-                        backdrop-blur-md shadow-2xl"
-                    >
-                        <div
-                            className="p-4 sm:p-6 md:p-8 
-                            overflow-y-auto scrollbar-thin scrollbar-track-transparent 
-                            scrollbar-thumb-zinc-700 scrollbar-thumb-rounded-full 
-                            h-[80vh] custom-scrollbar"
-                        >
+                    <Card className="w-full max-w-5xl md:w-4/5 lg:w-4/5 xl:w-4/5 max-h-[90vh] overflow-hidden relative bg-gradient-to-br from-zinc-800/80 to-zinc-900/80 backdrop-blur-md shadow-2xl">
+                        <div className="p-4 sm:p-6 md:p-8 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-700 scrollbar-thumb-rounded-full h-[80vh] custom-scrollbar">
                             <button
                                 onClick={closeProjectModal}
                                 className="absolute top-4 right-4 text-gray-400 hover:text-white z-20 transition-colors"
                             >
                                 ✕
                             </button>
+
                             <h2 className="font-serif text-2xl sm:text-3xl font-bold mb-6">
                                 {selectedProject.title}
                             </h2>
 
                             <div className="space-y-6">
-                                <section>
-                                    <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
-                                        Média du Projet
-                                    </h3>
+                                {/* Média (si dispo) */}
+                                {(selectedProject as any).media ||
+                                (selectedProject as any).pdfs ? (
+                                    <section>
+                                        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
+                                            Média du Projet
+                                        </h3>
 
-                                    {/* Bouton pour ouvrir la vidéo YouTube */}
-                                    {selectedProject.media?.type ===
-                                        "video" && (
-                                        <div className="flex justify-center mb-4">
-                                            <a
-                                                href={selectedProject.media.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl   font-semibold inline-flex items-center justify-center gap-2"
-                                            >
-                                                🎥 Voir la vidéo sur YouTube
-                                            </a>
-                                        </div>
-                                    )}
+                                        {(selectedProject as any).media
+                                            ?.type === "video" && (
+                                            <div className="flex justify-center mb-4">
+                                                <a
+                                                    href={
+                                                        (selectedProject as any)
+                                                            .media.url
+                                                    }
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2"
+                                                >
+                                                    🎥 Voir la vidéo sur YouTube
+                                                </a>
+                                            </div>
+                                        )}
 
-                                    {/* Affichage des images en dessous du bouton */}
-                                    {selectedProject.media?.screenshots &&
-                                        selectedProject.media.screenshots
-                                            .length > 0 && (
+                                        {(selectedProject as any).media
+                                            ?.screenshots?.length > 0 && (
                                             <div className="flex flex-wrap justify-center gap-4">
-                                                {selectedProject.media.screenshots.map(
-                                                    (imageSrc, index) => (
+                                                {(
+                                                    selectedProject as any
+                                                ).media.screenshots.map(
+                                                    (
+                                                        imageSrc: any,
+                                                        index: number
+                                                    ) => (
                                                         <div
                                                             key={index}
                                                             className="flex justify-center"
@@ -566,26 +828,30 @@ export const ProjectsSection = () => {
                                                                 alt={`Screenshot ${
                                                                     index + 1
                                                                 }`}
-                                                                className="rounded-lg w-auto h-auto max-w-[600px]" // Ajuste la largeur max
+                                                                className="rounded-lg w-auto h-auto max-w-[600px]"
                                                             />
                                                         </div>
                                                     )
                                                 )}
                                             </div>
                                         )}
-                                    {/* Bouton pour ouvrir le PDF, affiché uniquement si un PDF est défini */}
-                                    {/* Affichage des boutons PDF s'il y a plusieurs fichiers */}
-                                    {selectedProject?.pdfs &&
-                                        selectedProject.pdfs.length > 0 && (
+
+                                        {(selectedProject as any).pdfs?.length >
+                                            0 && (
                                             <div className="flex flex-col items-center gap-4 mt-6">
-                                                {selectedProject.pdfs.map(
-                                                    (pdf, index) => (
+                                                {(
+                                                    selectedProject as any
+                                                ).pdfs.map(
+                                                    (
+                                                        pdf: any,
+                                                        index: number
+                                                    ) => (
                                                         <a
                                                             key={index}
                                                             href={pdf.url}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
-                                                            className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl   font-semibold inline-flex items-center justify-center gap-2"
+                                                            className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2"
                                                         >
                                                             📄 {pdf.name}
                                                         </a>
@@ -593,89 +859,142 @@ export const ProjectsSection = () => {
                                                 )}
                                             </div>
                                         )}
-                                </section>
+                                    </section>
+                                ) : null}
 
+                                {/* Contexte (ou fallback résumé) */}
                                 <section>
                                     <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-4">
                                         Contexte
                                     </h3>
                                     <p className="text-white/60">
-                                        {
-                                            selectedProject.detailedDescription
-                                                .context
-                                        }
+                                        {(selectedProject as any)
+                                            .detailedDescription?.context ??
+                                            `Projet ${selectedProject.title} — ${selectedProject.company} (${selectedProject.year}).`}
                                     </p>
                                 </section>
 
-                                <section>
-                                    <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
-                                        Objectifs
-                                    </h3>
-                                    <ul className="list-disc list-inside text-white/60 space-y-2">
-                                        {selectedProject.detailedDescription.objectives.map(
-                                            (obj, index) => (
-                                                <li key={index}>{obj}</li>
-                                            )
-                                        )}
-                                    </ul>
-                                </section>
+                                {/* Objectifs */}
+                                {(selectedProject as any).detailedDescription
+                                    ?.objectives && (
+                                    <section>
+                                        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
+                                            Objectifs
+                                        </h3>
+                                        <ul className="list-disc list-inside text-white/60 space-y-2">
+                                            {(
+                                                selectedProject as any
+                                            ).detailedDescription.objectives.map(
+                                                (
+                                                    obj: string,
+                                                    index: number
+                                                ) => (
+                                                    <li key={index}>{obj}</li>
+                                                )
+                                            )}
+                                        </ul>
+                                    </section>
+                                )}
 
-                                <section>
-                                    <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
-                                        Méthodologie
-                                    </h3>
-                                    <ul className="list-disc list-inside text-white/60">
-                                        {selectedProject.detailedDescription.methodologie.map(
-                                            (method, index) => (
-                                                <li key={index}>{method}</li>
-                                            )
-                                        )}
-                                    </ul>
-                                </section>
+                                {/* Méthodologie */}
+                                {(selectedProject as any).detailedDescription
+                                    ?.methodologie && (
+                                    <section>
+                                        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
+                                            Méthodologie
+                                        </h3>
+                                        <ul className="list-disc list-inside text-white/60">
+                                            {(
+                                                selectedProject as any
+                                            ).detailedDescription.methodologie.map(
+                                                (m: string, i: number) => (
+                                                    <li key={i}>{m}</li>
+                                                )
+                                            )}
+                                        </ul>
+                                    </section>
+                                )}
 
-                                <section>
-                                    <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
-                                        Technologies Utilisées
-                                    </h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        {selectedProject.detailedDescription.technologies.map(
-                                            (tech, index) => (
-                                                <span
-                                                    key={index}
-                                                    className="bg-white/10 text-white/80 px-2 py-1 rounded-md text-sm"
-                                                >
-                                                    {tech}
-                                                </span>
-                                            )
-                                        )}
-                                    </div>
-                                </section>
+                                {/* Technologies */}
+                                {(selectedProject as any).detailedDescription
+                                    ?.technologies && (
+                                    <section>
+                                        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
+                                            Technologies Utilisées
+                                        </h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {(
+                                                selectedProject as any
+                                            ).detailedDescription.technologies.map(
+                                                (tech: string, i: number) => (
+                                                    <span
+                                                        key={i}
+                                                        className="bg-white/10 text-white/80 px-2 py-1 rounded-md text-sm"
+                                                    >
+                                                        {tech}
+                                                    </span>
+                                                )
+                                            )}
+                                        </div>
+                                    </section>
+                                )}
 
-                                <section>
-                                    <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
-                                        Résultats
-                                    </h3>
-                                    <ul className="list-disc list-inside text-white/60">
-                                        {selectedProject.detailedDescription.resultats.map(
-                                            (resultat, index) => (
-                                                <li key={index}>{resultat}</li>
-                                            )
-                                        )}
-                                    </ul>
-                                </section>
-                                {selectedProject.detailedDescription
-                                    .competencesValidees && (
+                                {/* Résultats (détaillés) */}
+                                {(selectedProject as any).detailedDescription
+                                    ?.resultats && (
+                                    <section>
+                                        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
+                                            Résultats
+                                        </h3>
+                                        <ul className="list-disc list-inside text-white/60">
+                                            {(
+                                                selectedProject as any
+                                            ).detailedDescription.resultats.map(
+                                                (r: string, i: number) => (
+                                                    <li key={i}>{r}</li>
+                                                )
+                                            )}
+                                        </ul>
+                                    </section>
+                                )}
+
+                                {/* Fallback "Faits marquants" si pas de detailedDescription.resultats */}
+                                {!(selectedProject as any).detailedDescription
+                                    ?.resultats &&
+                                    selectedProject.results?.length > 0 && (
+                                        <section>
+                                            <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
+                                                Faits marquants
+                                            </h3>
+                                            <ul className="list-disc list-inside text-white/60">
+                                                {selectedProject.results.map(
+                                                    (r, i) => (
+                                                        <li key={i}>
+                                                            {r.title}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </section>
+                                    )}
+
+                                {/* Compétences (si dispo) */}
+                                {(selectedProject as any).detailedDescription
+                                    ?.competencesValidees && (
                                     <section>
                                         <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent mb-3">
                                             Compétences Validées
                                         </h3>
                                         <div className="space-y-4">
                                             {Object.entries(
-                                                selectedProject
+                                                (selectedProject as any)
                                                     .detailedDescription
                                                     .competencesValidees
                                             ).map(
-                                                ([category, skills], index) => (
+                                                (
+                                                    [category, skills]: any,
+                                                    index
+                                                ) => (
                                                     <div key={index}>
                                                         <h4 className="text-lg font-semibold text-white/80 mb-2">
                                                             {category}
@@ -683,14 +1002,10 @@ export const ProjectsSection = () => {
                                                         <ul className="list-disc list-inside text-white/60 space-y-1">
                                                             {skills.map(
                                                                 (
-                                                                    skill,
-                                                                    skillIndex
+                                                                    skill: string,
+                                                                    j: number
                                                                 ) => (
-                                                                    <li
-                                                                        key={
-                                                                            skillIndex
-                                                                        }
-                                                                    >
+                                                                    <li key={j}>
                                                                         {skill}
                                                                     </li>
                                                                 )
@@ -701,6 +1016,21 @@ export const ProjectsSection = () => {
                                             )}
                                         </div>
                                     </section>
+                                )}
+
+                                {/* Lien “Découvrir” dans la modale */}
+                                {selectedProject.link && (
+                                    <div className="flex justify-center pt-2">
+                                        <a
+                                            href={selectedProject.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2"
+                                        >
+                                            Découvrir
+                                            <ArrowUpRightIcon className="size-4" />
+                                        </a>
+                                    </div>
                                 )}
                             </div>
                         </div>
