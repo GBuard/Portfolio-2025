@@ -9,6 +9,7 @@ import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
 import { Card } from "@/components/Cards";
 import { Fragment } from "react";
+import kamel from "@/assets/images/kamel.png";
 
 const testimonials = [
     {
@@ -24,22 +25,11 @@ const testimonials = [
         avatar: Laurence,
     },
     {
-        name: "Daniel White",
-        position: "CEO @ InnovateCo",
-        text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-        avatar: memojiAvatar3,
-    },
-    {
-        name: "Emily Carter",
-        position: "Product Manager @ GlobalTech",
-        text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-        avatar: memojiAvatar4,
-    },
-    {
-        name: "Michael Brown",
-        position: "Director of IT @ MegaCorp",
-        text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-        avatar: memojiAvatar5,
+        name: "Kamel GABTENI",
+        position:
+            "Formateur & Responsable projets numériques @ Ariane Méditerranée",
+        text: "Travailler avec Guénolé, c’est avoir la certitude qu’un projet avance, même quand les moyens sont limités. J’ai vu son évolution de près : au début on a construit les premières pages de l’application Glide ensemble, puis très vite il a pris les rênes tout seul. Il a su développer des solutions adaptées aux besoins réels des équipes, avec toujours le souci de la simplicité et de l’efficacité.",
+        avatar: kamel,
     },
 ];
 

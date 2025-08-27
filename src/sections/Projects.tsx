@@ -22,6 +22,9 @@ import ads from "@/assets/images/ads.png";
 import articles from "@/assets/images/articles.png";
 import post1 from "@/assets/images/Post.png";
 import accueil from "@/assets/images/accueil.png";
+import offres from "@/assets/images/offre.png";
+import cal from "@/assets/images/cal.png";
+import apl from "@/assets/images/apl.png";
 
 import MMILAN from "@/assets/images/MMILAN.png";
 import ecomove from "@/assets/images/ecomove.png";
@@ -240,7 +243,7 @@ const portfolioProjects = [
         link: "https://ariane-mediterranee.fr",
         image: accueil,
         media: {
-            screenshots: [mediterraweb],
+            screenshots: [accueil, offres],
         },
         detailedDescription: {
             context:
@@ -284,6 +287,79 @@ const portfolioProjects = [
                 DEVELOPPER: [
                     "AC14.01/14.06 – Environnement outillé & personnalisation CMS",
                     "AC24.01/24.03 – Vues responsives & interactions",
+                ],
+                ENTREPRENDRE: [
+                    "AC35.01 – Piloter un produit",
+                    "AC35.02 – Maîtriser la qualité d’usage",
+                    "AC35.04 – Défendre et expliquer les choix",
+                ],
+            },
+        },
+    },
+    {
+        company: "Ariane Méditerranée",
+        year: "2025",
+        title: "App gestion des formations & salles",
+        results: [
+            { title: "App gestion formations" },
+            { title: "Planning, salles, présences" },
+            { title: "Backend complet (Node/Mongo)" },
+        ],
+        link: "https://ariane-mediterranee.fr",
+        image: cal,
+        media: {
+            screenshots: [cal, apl],
+        },
+        detailedDescription: {
+            context:
+                "Remplacement de Google Sheets par une app web centralisée pour planifier formations/salles et suivre les présences.",
+            objectives: [
+                "Créer formations/séances (ponctuelles & récurrentes)",
+                "Réserver salles et affecter formateurs/bénéficiaires",
+                "Assurer traçabilité et préparer exports PDF/emails",
+            ],
+            methodologie: [
+                "React (Vite)",
+                "Node.js",
+                "Express",
+                "MongoDB/Mongoose",
+                "JWT",
+                "Bootstrap CSS",
+                "React Big Calendar",
+                "Puppeteer PDF",
+            ],
+            technologies: [
+                "Glide",
+                "Google Sheets & Drive",
+                "Make",
+                "Slack",
+                "Zapier",
+            ],
+            resultats: [
+                "Backend complet livré, front opérationnel pour la gestion",
+                "Centralisation et traçabilité des données",
+                "Adoption interne positive, extension multi-agences prévue",
+            ],
+            competencesValidees: {
+                COMPRENDRE: [
+                    "AC11.02 – Évaluer un dispositif existant",
+                    "AC11.05 – Identifier les cibles/usages internes",
+                ],
+                CONCEVOIR: [
+                    "AC12.01 – Concevoir en termes d’usage",
+                    "AC22.01 – Co-concevoir le produit avec retours terrain",
+                ],
+                EXPRIMER: [
+                    "AC13.01 – Rédiger doc et messages d’accompagnement",
+                ],
+                DEVELOPPER: [
+                    "AC14.01",
+                    "AC14.02",
+                    "AC14.05",
+                    "AC24.01",
+                    "AC24.04",
+                    "AC34.01",
+                    "AC34.02",
                 ],
                 ENTREPRENDRE: [
                     "AC35.01 – Piloter un produit",
